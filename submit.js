@@ -1,13 +1,17 @@
 const findSum = function(array) {
-  // your code here - don't forget to return a number!
-};
+  return array.reduce((a,b) =>  
+  a + b , 0)};
 
 const findFrequency = function(array) {
   // your code here - don't forget to return an object!
 };
 
-const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
+const isPalindrome = function(str) {const isPalindrome = function(str) {
+  let len = Math.floor(str.length / 2);
+  for (var i = 0; i < len; i++)
+    if (str[i] !== str[str.length - i - 1])
+      return false;
+  return true;
 };
 
 const largestPair = function(array) {
